@@ -1,23 +1,28 @@
 package br.edu.sp.fatec;
 
-public abstract class FiguraGeometrica implements Calculable{
+import lombok.Getter;
+import lombok.Setter;
+
+/**
+ * Classe abstrata que contém atributos que serão herdados
+ * @author murata
+ *
+ */
+@Getter
+@Setter
+public abstract class FiguraGeometrica implements Calculable {
 	
-	private double lado;
-	private double raio;
+	private Double lado;
+	private Double base;
+	private Double altura;
+	private Double raio;
+	private Double ladoTriangulo;
+	private Double ladoTriangulo2;
+	private Double baseMaior;
+	private Double baseMenor;
+	private Double alturaTrapezio;
+	private Double diagonalMaior;
+	private Double diagonalMenor;
+	private Double aresta;
 	
-	public double getLado() {
-		return lado;
-	}
-
-	public void setLado(double lado) {
-		this.lado = lado;
-	}
-
-	public double getRaio() {
-		return raio;
-	}
-
-	public void setRaio(double raio) {
-		this.raio = raio;
-	}
 }
